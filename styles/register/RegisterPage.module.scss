@@ -1,0 +1,82 @@
+.container {
+    display: flex; // Usar flexbox para alinear los elementos
+    justify-content: space-between; // Espaciado entre los elementos
+    align-items: stretch; // Asegura que todos los hijos se estiren a la misma altura
+    margin: 2.5rem 6rem; // Márgenes alrededor del contenedor
+    font-family: Arial, sans-serif; // Fuente
+
+    section {
+        flex: 0 0 50%; // Se asegura de que ocupe el 50% del ancho
+        max-width: 50%; // Limitar el ancho a 50%
+        display: flex; // Usar flexbox para permitir que la sección se estire
+        flex-direction: column; // Mantener la orientación vertical
+    }
+}
+
+.formSection {
+    display: flex; // Usar flexbox para el formulario
+    flex-direction: column; // Orientación vertical
+    gap: 1.5rem; // Espacio entre campos
+    flex: 1; // Permite que ocupe toda la altura disponible
+}
+
+.form {
+    display: flex; // Usar flexbox para el formulario
+    flex-direction: column; // Orientación vertical
+    gap: 1.5rem; // Espacio entre campos
+}
+
+.formField {
+    display: flex; // Usar flexbox para los campos
+    flex-direction: column; // Orientación vertical
+    gap: 0.5rem; // Espacio entre label y input
+
+    label {
+        font-size: 1.2rem; // Tamaño de la fuente
+        font-weight: bold; // Peso de la fuente
+        color: #484866; // Color de la fuente
+    }
+
+    input {
+        padding: 0.8rem; // Espaciado interno
+        font-size: 1rem; // Tamaño de la fuente
+        border: 1px solid #484866; // Borde del input
+        border-radius: 4px; // Bordes redondeados
+        background-color: #484866; // Color de fondo
+        color: white; // Color del texto
+    }
+}
+
+.error {
+    color: red; // Color del mensaje de error
+    font-size: 0.9rem; // Tamaño de la fuente del error
+}
+
+.submitButton {
+    align-self: flex-end; // Alinear el botón al final
+    padding: 0.5rem 1.5rem; // Espaciado interno
+    font-size: 1rem; // Tamaño de la fuente
+    background-color: #b88d7d; // Color de fondo
+    color: white; // Color del texto
+    border: none; // Sin borde
+    border-radius: 4px; // Bordes redondeados
+    cursor: pointer; // Cambiar cursor al pasar
+
+    &:hover {
+        background-color: darken(#b88d7d, 10%); // Efecto hover
+    }
+}
+
+.imageSection {
+    width: 50%; // Limitar el ancho a 50%
+    display: flex; // Usar flexbox para centrar la imagen
+    justify-content: center; // Centrar horizontalmente
+    align-items: center; // Centrar verticalmente
+    flex: 1; // Permitir que la imagen ocupe toda la altura disponible
+
+    img {
+        max-width: 100%; // Mantener la imagen dentro del contenedor
+        height: 100%; // Asegurarse de que la imagen ocupe toda la altura del contenedor
+        object-fit: cover; // Mantener la proporción de la imagen mientras ocupa el espacio
+    }
+}

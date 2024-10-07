@@ -1,0 +1,60 @@
+.card__container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem;
+    background-color: #f4f4f4;
+}
+
+.card__container__details {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+}
+
+.shipment__title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.shipment__figure__container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.shipment__figcaption {
+    font-size: 1rem;
+    color: #007bff;
+    cursor: pointer;
+}
+
+.shipment__date {
+    margin-top: 1rem;
+    color: #666;
+}
+
+.shipment__status {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.shipment__status.Delivered {
+    background-color: green;
+}
+
+.shipment__status.InProcess {
+    background-color: yellow;
+    color: black;
+}
+
+.shipment__status.Canceled {
+    background-color: red;
+}

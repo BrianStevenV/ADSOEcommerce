@@ -1,0 +1,12 @@
+$button-background-color: #3E3E63;
+
+.button{
+    background-color: $button-background-color;
+    padding: 10px 30px;
+    border: none;
+
+    &:hover{
+        cursor: pointer;
+    }
+
+}

@@ -1,0 +1,31 @@
+$color-font-title: #000000;
+$color-font-price: #000000;
+
+$background-color-figcaption: #BBBBBB;
+
+.card_container{
+    display: flex;
+}
+.figure_container{
+    background: $background-color-figcaption;
+    width: 25%;
+    margin: 2.5rem 6rem;
+
+
+    .figcaption_container{
+        padding: 2rem 2rem;
+
+        background: $background-color-figcaption;
+    }
+    .subcontainer_card{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 1rem;
+    }
+    h1{
+        color: $color-font-title
+    }
+    p{
+        color: $color-font-price;
+    }
+}

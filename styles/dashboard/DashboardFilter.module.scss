@@ -1,0 +1,17 @@
+.container{
+    display: flex;
+
+    .label{
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin-right: 1rem;
+    }
+    .input{
+        padding: 0.5rem;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 1rem;
+        background-color:white;
+        color: black;
+    }
+}

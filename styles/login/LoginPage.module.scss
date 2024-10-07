@@ -1,0 +1,76 @@
+$color-institutional: #484866; 
+
+.container {
+    display: flex; 
+    width: 100%; 
+    
+    &__figure {
+        flex: 0 0 50%; 
+        display: flex; 
+        justify-content: center; 
+        align-items: center; 
+        height: 100%; 
+    }
+
+    &__login {
+        flex: 0 0 50%; 
+        display: flex;
+        flex-direction: column;
+        justify-content: center; 
+        align-items: center; 
+        gap: 2rem; 
+        padding: 2.5rem 6rem; 
+        height: 100%; 
+    }
+
+    &__form {
+        display: flex; // Usar flexbox para el formulario
+        flex-direction: column; // Orientación vertical
+    }
+
+    
+}
+
+.container__figure {
+    position: relative; // Necesario para que funcione Next.js Image
+    width: 100%; // Asegúrate de que ocupe el 100% del contenedor
+    height: 100%; // Asegúrate de que ocupe el 100% de la altura
+}
+
+.container__figure img {
+    width: 100%; // Mantener la imagen dentro del contenedor
+    height: 100%; // Asegurarse de que la imagen ocupe toda la altura del contenedor
+    object-fit: cover; // Mantener la proporción de la imagen
+}
+
+.label{
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+}
+
+.input{
+    padding: .5rem 3rem;
+    font-size: 1rem;
+    border: 1px solid #484866;
+    border-radius: 4px;
+    background-color: #484866;
+    color: white;
+    margin-bottom: 3rem;
+}
+
+.button__login {
+    background-color: $color-institutional;
+    padding: 1rem 3rem;
+    border-radius: 25px;
+}
+
+.button__google {
+    background-color: $color-institutional;
+    padding:  1rem 3rem;
+    border-radius: 25px;
+
+}
+
+.title{
+    font-size: 2.8rem;
+}

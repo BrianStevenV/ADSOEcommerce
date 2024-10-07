@@ -1,0 +1,32 @@
+$button-background-color: #3E3E63;
+
+.container{
+    margin: 2.5rem 6rem;
+
+    .container__h1{
+        display: flex;
+        justify-content: center;
+    }
+
+    &__card__component{
+        display: flex;
+        justify-content: center;
+    }
+
+    &__button{
+        display: flex;
+        justify-content: center;
+        margin-top: 10rem;
+
+        .button{
+            width: 10rem;
+            height: 3rem;
+            background-color: $button-background-color;
+            color: #FFFFFF;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.5rem;
+        }
+    }
+}

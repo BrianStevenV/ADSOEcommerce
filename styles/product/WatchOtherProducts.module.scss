@@ -1,0 +1,30 @@
+$background-color-figcaption: #BBBBBB;
+$color-black: #000000;
+
+.figure__container{
+    margin: 2.5rem 6rem;
+    background-color: $background-color-figcaption;
+
+    .figcaption{
+        width: 90%;
+        margin: 1rem;
+        color:$color-black;
+
+        .name{
+            font-size: 2rem;
+            font-weight: bold;
+            margin: 1rem 1rem;
+        }
+        .subcontainer{
+            display: flex;
+            justify-content: space-between;
+            margin: 1rem .3rem;
+        }
+        .price{
+            margin-top: 1rem;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+    }
+}
+

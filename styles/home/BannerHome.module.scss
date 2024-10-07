@@ -1,0 +1,45 @@
+$banner-background-color: #BBB193;
+$color-banner-font: #FFFFFF;
+$size-font-title_figcaption: 3rem;
+$size-font-p_figcaption: 2.7rem;
+
+.figure {
+    display: flex; // Usar flexbox
+    background: red; // Color de fondo de la figura
+    height: 40vh; // Altura de la figura
+    margin: 2.5rem 6rem; // Espaciado superior e inferior
+
+    .figcaption {
+        background-color: $banner-background-color; // Color de fondo del caption
+        flex: 1; // Hacer que el caption ocupe el espacio disponible
+        display: flex; // Usar flexbox para el contenido interno
+        flex-direction: column; // Colocar el contenido en columna
+        justify-content: center; // Centrar verticalmente
+        padding: 1rem; // Espaciado interno
+
+        h1 {
+            margin: 0; // Eliminar margen por defecto
+            font-size: $size-font-title_figcaption; // Tamaño de la fuente para el título
+            color: $color-banner-font; // Color del texto
+        }
+
+        p {
+            margin: 0; // Eliminar margen por defecto
+            font-size: $size-font-p_figcaption; // Tamaño de la fuente para el párrafo
+            color: $color-banner-font;
+            margin:1.5rem 0px;
+            text-align: center;
+        }
+    }
+
+    // Asegurarse de que la imagen esté después del figcaption
+    img {
+        order: 1; // Asegurarse de que la imagen aparezca después
+        flex: 1; // Hacer que la imagen ocupe el espacio disponible
+        object-fit: cover; // Asegurarse de que la imagen cubra el área
+    }
+
+    .figcaption {
+        order: 0; // Asegurarse de que el caption aparezca antes
+    }
+}

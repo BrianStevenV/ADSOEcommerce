@@ -1,0 +1,32 @@
+.card__container{
+    padding: 2rem;
+
+    &__details{
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        background-color: #fff;
+        margin-bottom: 4rem;
+    }
+}
+
+
+.purchase__figure__container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.purchase__figcaption {
+    font-size: 1rem;
+    color: #007bff;
+    cursor: pointer;
+}
+
+.purchase__date{
+    margin-top: 1rem;
+    color: #666;
+}
+

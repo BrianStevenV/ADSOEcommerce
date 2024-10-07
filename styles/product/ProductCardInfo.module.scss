@@ -1,0 +1,35 @@
+$default-margin:2.5rem 6rem;
+$background-color-figcaption: #BBBBBB;
+$color-black: #000000;
+
+.figure_card_container{
+    display: flex;
+    margin: $default-margin;
+    background-color: $background-color-figcaption;
+
+    .image{
+        display: flex;
+        align-items: center;
+    }
+    .figcaption{
+
+        width: 75%;
+        margin: 3rem 3rem;
+        color: $color-black;
+
+        &__title{
+            font-style: bold;
+            font-size: 3.5rem;
+        }
+        &__price{
+            margin-top: 3rem;
+            font-style: bold;
+            font-size: 2.5rem;
+        }
+        &__description{
+            margin-top: 3rem;
+            font-size: 2rem;
+        }
+    }
+}
+

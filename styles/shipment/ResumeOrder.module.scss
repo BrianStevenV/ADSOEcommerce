@@ -1,0 +1,67 @@
+$background-color-button: #C2948A;
+
+.resume-order {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+
+    // margin: 2.5rem 6rem;
+    margin-bottom: 7rem;
+    
+  &-title{
+    font-size: 2.7rem;
+    margin: 2rem 0rem;
+  }
+    .resume-title {
+      font-size: 2rem;
+      margin-bottom: 16px;
+      list-style: none;
+
+    }
+  
+    
+  
+    .order-item {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 1.5rem;
+            
+            
+    
+        .item-name {
+            font-weight: 500;
+        }
+        
+        .item-price {
+            font-weight: 100;
+
+        }
+        
+        &.shipping {
+            border-top: 1px solid #dee2e6;
+            padding-top: 8px;
+            margin-top: 3rem;
+        }
+    }
+    
+  
+    .total {
+      display: flex;
+      justify-content: space-between;
+      font-weight: 700;
+      font-size: 2rem;
+      margin: 2rem 0rem;
+    }
+  
+    .buy-now-button {
+      background-color: $background-color-button;
+      color: black;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 4px;
+      font-size: 16px;
+      cursor: pointer;
+      margin-top: 1rem;
+      float: right;
+      width: 25%;
+    }
+  }
