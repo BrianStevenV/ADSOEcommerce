@@ -1,11 +1,11 @@
 'use client'
-// use client solo afecta a este archivo y no a sus hijos.
 import { FC } from 'react';
 import Head from 'next/head';
 import Header from '@/app/components/Header';
 import Footer from '@/app/components/Footer';
 
 interface Props {
+    children: any,
     title : string, 
     pageDescription: string, 
     imageFullURL?: string
