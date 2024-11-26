@@ -1,4 +1,4 @@
-import Dashboard from "@/app/components/Dashboard"
+import Dashboard, { Column } from "@/app/components/Dashboard"
 import DashboardFilter from "@/app/components/DashboardFilter";
 
 import styles from '../../../../styles/ProductDashboardPage.module.scss';
@@ -13,7 +13,7 @@ const userInfo = [
     { id: 7, TypeUser: 7, Status: 'Active', OpenAccount: '24/08/2024', LastConnection: '24/08/2024', Country: 'USA', Enable: '/enable icon 1.png', Disable: '/disable icon 1.png'}
 ]
 
-const columns = [
+const columns: Column[] = [
     { label: 'Id', accessor: 'id', type: 'number' },
     { label: 'Type User', accessor: 'TypeUser', type: 'number' },
     { label: 'Status', accessor: 'Status', type: 'string' },

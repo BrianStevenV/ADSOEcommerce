@@ -1,4 +1,4 @@
-import Dashboard from "@/app/components/Dashboard"
+import Dashboard, { Column } from "@/app/components/Dashboard"
 import DashboardFilter from "@/app/components/DashboardFilter";
 
 import styles from '../../../../../styles/ProductDashboardPage.module.scss';
@@ -13,7 +13,7 @@ const orderHistoryInfo = [
     { id: 7, Product: 'Iphone 6', Price: 399, OpenDate: '24/08/2024', FinishDate: '24/08/2024', Category: 'Electronics'}
 ]
 
-const columns = [
+const columns: Column[] = [
     { label: 'Id', accessor: 'id', type: 'number' },
     { label: 'Product', accessor: 'Product', type: 'string' },
     { label: 'Price', accessor: 'Price', type: 'number' },

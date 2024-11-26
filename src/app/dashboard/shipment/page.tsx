@@ -1,4 +1,4 @@
-import Dashboard from "@/app/components/Dashboard"
+import Dashboard, { Column } from "@/app/components/Dashboard"
 import DashboardFilter from "@/app/components/DashboardFilter";
 
 import styles from '../../../../styles/ProductDashboardPage.module.scss';
@@ -15,7 +15,7 @@ const shipmentInfo = [
     { IdOrder: 9, User: 9, Payment: 'Credit Card', Price: 999, Country: 'USA', Promotion: 'Free Shipping', Address: '1234 Main St, New York, NY 10001', PackUp: '/package icon 1.png', Deliver: '/deliver icon 1.png'},
 ]
 
-const columns = [
+const columns: Column[] = [
     { label: 'Id Order', accessor: 'IdOrder', type: 'number' },
     { label: 'User', accessor: 'User', type: 'number' },
     { label: 'Payment', accessor: 'Payment', type: 'string' },

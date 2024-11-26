@@ -1,4 +1,4 @@
-import Dashboard from "@/app/components/Dashboard"
+import Dashboard, { Column } from "@/app/components/Dashboard"
 import DashboardFilter from "@/app/components/DashboardFilter";
 
 import styles from '../../../../styles/ProductDashboardPage.module.scss';
@@ -15,7 +15,7 @@ const stockInfo = [
     { id: 9, Product: 'Laptop', Price: 999, OpenDate: '24/08/2024', Amount: 10, Category: 'Laptop', Add: '/add icon 1.png', Substraction: '/substraction icon 1.png'},
 ];
 
-const columns = [
+const columns: Column[] = [
     { label: 'Id', accessor: 'id', type: 'number' },
     { label: 'Product', accessor: 'Product', type: 'string' },
     { label: 'Price', accessor: 'Price', type: 'number' },

@@ -1,4 +1,4 @@
-import Dashboard from "@/app/components/Dashboard"
+import Dashboard, { Column } from "@/app/components/Dashboard"
 import DashboardAddProductButton from "@/app/components/DashboardAddProductButton";
 import DashboardFilter from "@/app/components/DashboardFilter";
 
@@ -17,7 +17,7 @@ const productInfo = [
     { idProduct: 10, User: 22, Product: 'Tablet', Price: 399, OpenDate: '24/08/2024', Promotion: 'True', Category: 'Tablet', Update: '/edit icon 1.png', Delete: '/delete icons 1.png'},
 ];
 
-const columns = [
+const columns: Column[] = [
     { label: 'Id Product', accessor: 'idProduct', type: 'number' },
     { label: 'User', accessor: 'User', type: 'number' },
     { label: 'Product', accessor: 'Product', type: 'string' },

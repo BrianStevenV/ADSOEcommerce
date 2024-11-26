@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 import styles from '../../../styles/dashboard/Dashboard.module.scss';
 
-interface Column {
+export interface Column {
     label: string; 
     accessor: string;
     type: 'string' | 'number' | 'image';
