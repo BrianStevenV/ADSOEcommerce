@@ -1,6 +1,5 @@
 import Image from "next/image"
 import{ FC } from "react"
-import AddCartButton from "./AddCartButton";
 import styles from '../../../styles/product/ProductCardInfo.module.scss'
 import AddProductCartButton from "./AddProductCartButton";
 
