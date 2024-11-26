@@ -1,4 +1,4 @@
-import { vendored } from 'next/dist/server/future/route-modules/pages/module.compiled';
+
 import styles from '../../../styles/product/ProductDetailPage.module.scss';
 
 import WatchOtherProducts from '../components/WatchOtherProducts';
